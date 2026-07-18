@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       download-link: ${{ steps.aseprite-link.outputs.download-link }}
-      release-tag: ${{ steps.aseprite-link.outputs.release-tag }}
+      release-tag: '${{ steps.aseprite-link.outputs.release-tag }}'
 :
       - 名称: 获取 Aseprite 发布链接
         id: aseprite-link
